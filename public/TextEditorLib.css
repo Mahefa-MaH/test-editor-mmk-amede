@@ -1,0 +1,85 @@
+.message-received {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(80, 171, 80);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeInOut 10s forwards;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    0.2% {
+        opacity: 1;
+    }
+}
+
+.error-message {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(218, 73, 73);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0s ease;
+    animation: errorFadeInOut 10s forwards; /* Utilise une autre animation pour les erreurs */
+    animation-delay: 0s;
+}
+
+@keyframes errorFadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    0.2% {
+        opacity: 1;
+    }
+}
+/* Ajoutez ces styles CSS à votre fichier TextEditorLib.css */
+
+.stretchable-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s, background-color 0.4s, box-shadow 0.4s;
+}
+
+.stretchable-button:hover {
+    color: #3498db;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.stretchable-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.stretchable-button:hover::before {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+

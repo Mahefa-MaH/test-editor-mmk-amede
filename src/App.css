@@ -1,0 +1,88 @@
+
+.App {
+  text-align: center;
+  }
+
+.App-logo {
+  height: 8vmin;                                /* Ajustez la taille du logo selon vos besoins */
+  width: auto;                                  /* Réglez la largeur sur auto pour conserver les proportions originales du logo */
+  pointer-events: none;
+  margin-top: 1%;
+  margin-left: 1%; 
+  /*filter: invert(100%);*/
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(6px + 1vmin);
+  color: white;
+}
+
+@media (max-widh:1125px) {                      /* Définition des styles pour les écrans ayant une largeur maximale de 1125px */
+  .editor{                                      /* Sélection de la classe "editor" */
+    width: 100%;
+    margin-left: 0;
+  }
+  
+}
+
+.text-editor {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;                          /* Centrer les éléments horizontalement */
+  justify-content: center;                      /* Centrer les éléments verticalement */
+  max-height: 500px;                            /* Définit une hauteur maximale pour le conteneur du texte */
+  overflow-y: auto;                             /* Ajoute une barre de défilement verticale si le contenu dépasse la hauteur maximale */
+}
+
+.editor {
+  width: 1300px;
+  height: auto;
+  border: 0.5px solid gray;
+  height: 400px; 
+  overflow-y: auto;                           /* Ajoute une barre de défilement verticale si le contenu dépasse la hauteur définie */
+}
+
+.text {
+  text-decoration: underline;
+  margin-top: 5%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;                           /* Ajustez la marge selon vos besoins */
+}
+
+.button-container button {
+  margin-left: 20px;                          /* Ajoute un espace entre les boutons */
+  padding: 5px 10px;                          /* Ajoute un peu de rembourrage pour les boutons */
+  border: 1px solid transparent;              /* Ajoute une bordure d'1 pixel solide transparente */
+  cursor: pointer;                            /* Change le curseur au survol des boutons */
+  border-radius: 50px;                        /* Ajoute un bord arrondi de 50 pixels à chaque coin */
+  transition: border-radius 0.3s;             /* Ajoute une transition pour le changement de bord arrondi */
+}
+
+.button-container button.send {
+  background-color: rgb(80, 171, 80);       /* Couleur de fond verte pour le bouton "Envoyer" */
+  color: black;                             /* Couleur du texte blanche pour le bouton "Envoyer" */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);    /* Ajoute une bosse de 2 pixels avec une opacité de 20% */
+}
+
+.button-container button.cancel {
+  background-color: rgb(218, 73, 73);       /* Couleur de fond rouge pour le bouton "Annuler" */
+  color: black;                             /* Couleur du texte blanche pour le bouton "Annuler" */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);    /* Ajoute une bosse de 2 pixels avec une opacité de 20% */
+}
+
+.button-container button.send:hover,
+.button-container button.cancel:hover {
+  border-radius: 70px;                        /* Augmente le bord arrondi à 70 pixels lors du survol */
+}
+

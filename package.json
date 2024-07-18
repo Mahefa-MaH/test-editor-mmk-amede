@@ -1,0 +1,71 @@
+{
+  "name": "text-editor",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/dayjs": "^3.0.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.14",
+    "@mui/lab": "^5.0.0-alpha.170",
+    "@mui/material": "^5.16.4",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@mui/x-date-pickers": "^7.11.0",
+    "@mui/x-date-pickers-pro": "^7.2.0",
+    "@syncfusion/ej2-react-inputs": "^25.1.38",
+    "@syncfusion/ej2-react-richtexteditor": "^25.1.40",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "dayjs": "^1.11.12",
+    "draft-js": "^0.11.7",
+    "draft-js-export-html": "^1.4.1",
+    "draft-js-utils": "^1.4.1",
+    "draftjs-to-html": "^0.9.1",
+    "html-to-json": "^0.6.0",
+    "jodit": "^4.1.16",
+    "jodit-react": "^4.0.25",
+    "mammoth": "^1.7.1",
+    "pdfjs-dist": "^4.0.379",
+    "react": "^18.3.1",
+    "react-datepicker": "^6.9.0",
+    "react-dom": "^18.3.1",
+    "react-draft-wysiwyg": "^1.15.0",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.22.3",
+    "slate": "^0.103.0",
+    "slate-react": "^0.102.0",
+    "styled-components": "^6.1.8",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "react-scripts": "^5.0.1"
+  }
+}
